@@ -156,9 +156,9 @@ footer a {
     .heading-content p {
         font-size: 0.9rem;        
     }
-    #text-head {
+    /*#text-head {
         font-size: 1.5rem;
-    }
+    }*/
 }
 
 @media screen and (min-width: 600px) {
