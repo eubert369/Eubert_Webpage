@@ -65,7 +65,8 @@
                     cum praesentium non!</p>
 
                 <!-- <button class="btn w-50 rounded-4 rounded-pill"> -->
-                <a class="btn w-50 rounded-4 rounded-pill text-white fw-bold" href="https://www.facebook.com/marceubert.contado" target="_blank">Know More</a>
+                <a class="btn w-50 rounded-4 rounded-pill text-white fw-bold"
+                    href="https://www.facebook.com/marceubert.contado" target="_blank">Know More</a>
                 <!-- </button> -->
             </div>
         </div>
@@ -138,21 +139,21 @@
 
         <div id="contact" class="offset w-50 mx-auto mt-3 mb-5">
             <div class="post-heading text-center">
-                <h3 class="fw-bold display-4">Contact us</h3>
+                <h3 class="fw-bold display-4">Get in touch</h3>
                 <hr class="w-50 mx-auto pb-5">
             </div>
-            <form action="https://mail.google.com/mail/u/0/#inbox?compose=new">
+            <form onsubmit="sendEmail(); reset();">
                 <div class="form-group">
-                    <label for="email">Full Name:</label>
-                    <input type="text" class="form-control bg-secondary" id="email">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control bg-secondary" id="name" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email address:</label>
-                    <input type="email" class="form-control bg-secondary" id="email">
+                    <input type="email" class="form-control bg-secondary" id="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Your Message:</label>
-                    <textarea class="form-control bg-secondary"></textarea>
+                    <label for="text">Your Message:</label>
+                    <textarea id="text" class="form-control bg-secondary" required></textarea>
                 </div>
                 <button type="submit"
                     class="text-decoration-none fw-bold text-white bg-black mt-3 rounded-pill">Send</button>
@@ -167,6 +168,39 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
         integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
         crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        // function sendEmail() {
+        //     Email.send({
+        //         Host: "smtp.gmail.com",
+        //         Username: document.getElementById("name").value,
+        //         Password: "password",
+        //         To: 'marceubert886@gmail.com',
+        //         From: "you@isp.com",
+        //         Subject: "This is the subject",
+        //         Body: "And this is the body"
+        //     }).then(
+        //         message => alert(message)
+        //     );
+        // }
+        // 4edfaede-bcdc-4516-91b8-7f29a4c5e345
+        const name = document.getElementById("name"),
+            email = document.getElementById("email"),
+            msg = document.getElementById("text");
+
+        function sendEmail() {
+            Email.send({
+                SecureToken: "4edfaede-bcdc-4516-91b8-7f29a4c5e345",
+                To: 'marceubert886@gmail.com',
+                From: email.value,
+                Subject: "Inquiry from client",
+                Body: "This is " + name.value + "\n" + msg.value
+            }).then(
+                message => alert(message)
+            );
+        }
+
+    </script>
 </body>
 
 </html>
