@@ -8,6 +8,7 @@
     <title id="title">MARC EUBERT</title>
 
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
@@ -30,7 +31,10 @@
                             <a class="nav-link text-white" href="#about" onclick="about()">ABOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#service" onclick="work()">WORK</a>
+                            <a class="nav-link text-white" href="#service" onclick="work()">PROJECTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#skill">SKILLS</a>
                         </li>
                         <li class="nav-item text-white">
                             <a class="nav-link text-white" href="#contact" onclick="contact()">CONTACT</a>
@@ -44,164 +48,354 @@
         </div>
         <div class="heading-content text-center">
             <h5>Hello I'm</h5>
-            <h1>Marc Eubert</h1>
-            <!-- <p>Web Designer</p> -->
+            <h1>Marc Eubert</h1>           
         </div>
     </div>
-    <div id="about" class="offset container mt-3 pb-5">
-        <div class="post-heading text-center">
-            <h3 class="fw-bold display-4">About Me</h3>
-            <hr class="w-50 mx-auto pb-5">
-        </div>
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-12 pb-4">
-                <img id="img" class="img-fluid rounded-5" src="backImage.jpg" alt="profile-image">
-            </div>
-            <div class="col-lg-6 col-md-6 col-12">
-                <h2>Wanna Know Me?</h2>
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi obcaecati repellat adipisci excepturi
-                    porro dolor exercitationem eum minus. Blanditiis, sed ut hic rerum doloremque ducimus beatae itaque
-                    cum praesentium non!</p>
-
-                <!-- <button class="btn w-50 rounded-4 rounded-pill"> -->
-                <a class="btn w-50 rounded-4 rounded-pill text-white fw-bold"
-                    href="https://www.facebook.com/marceubert.contado" target="_blank">Know More</a>
-                <!-- </button> -->
-            </div>
-        </div>
-    </div>
-
-    <div id="service" class="offset container mt-3 mb-5">
-        <!-- <div class="post-heading text-center">
-            <h3 class="fw-bold display-3">Work</h3>
-            <hr class="w-50 mx-auto pb-5">
-        </div> -->
-
-        <div class="post-heading text-center">
-            <h3 id="text-head" class="fw-bold display-3">These are some of my projects</h3>
-            <hr class="w-50 mx-auto pb-5">
-        </div>
-
-        <div class="row d-flex justify-content-center">
-            <div class="col-lg-4 col-md-6 col-12 pb-5">
-                <div class="card bg-secondary" style="width: 18rem;">
-                    <img src="surveyForm.png" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title"><a href="Survey Form/survey_form.html"
-                                class="text-decoration-none text-black">Survey Form</a></h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 pb-5">
-                <div class="card bg-secondary" style="width: 18rem;">
-                    <img src="productLandingPage.png" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title"><a href="Product Landing Page/productLanding.html"
-                                class="text-decoration-none text-black">Product Landing Page</a></h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 pb-5">
-                <div class="card bg-secondary" style="width: 18rem;">
-                    <img src="simpleCalc.png" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title"><a href="Calculator/index.html"
-                                class="text-decoration-none text-black">Simple Calculator</a></h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 pb-5">
-                <div class="card bg-secondary" style="width: 20rem;">
-                    <img src="technicalDocumentationPage.png" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title"><a href="Technical Documentation Page/Technical_Shit.html"
-                                class="text-decoration-none text-black">Technical Documentation Page</a></h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12 pb-5">
-                <div class="card bg-secondary" style="width: 18rem;">
-                    <img src="portfolio.png" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title"><a href="Personal_Portfolio_Webpage/Personal_Portfolio.html"
-                                class="text-decoration-none text-black">Portfolio</a></h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="text-center">
-            <!-- <button class="button w-50 mx-auto mb-5 rounded-pill"> -->
-            <a class="btn w-50 rounded-4 rounded-pill text-white fw-bold bg-dark" href="#">Know More</a>
-            <!-- </button> -->
-        </div>
-
-        <div id="contact" class="offset w-50 mx-auto mt-3 mb-5">
+    <div id="about" class="offset container-fluid pb-5 min-vh-100">
+        <div class="container">
             <div class="post-heading text-center">
-                <h3 class="fw-bold display-4">Get in touch</h3>
-                <hr class="w-50 mx-auto pb-5">
+                <h3 class="fw-bold display-4" data-aos="fade-up">About Me</h3>
+                <hr class="w-50 mx-auto pb-5" data-aos="fade-up">
             </div>
-            <form onsubmit="sendEmail(); reset();">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" class="form-control bg-secondary" id="name" required>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12 pb-4" data-aos="fade-right">
+                    <img id="img" class="img-fluid rounded-5" src="backImage.jpg" alt="profile-image">
                 </div>
-                <div class="form-group">
-                    <label for="email">Email address:</label>
-                    <input type="email" class="form-control bg-secondary" id="email" required>
+                <div class="col-lg-6 col-md-6 col-12" data-aos="fade-left">
+                    <h2>Wanna Know Me?</h2>
+                    <hr>
+                    <p style="text-align: justify;">&emsp;Hey, I'm Marc Eubert Contado, an aspiring web developer
+                        delving
+                        into the realms of PHP, Laravel, JavaScript, Python, React, React Native, MySQL, and more.
+                        Crafting
+                        digital experiences is my forte, and every line of code is an opportunity for innovation. Beyond
+                        the
+                        screen, I'm a tech enthusiast exploring the latest trends and savoring the thrill of turning
+                        ideas
+                        into dynamic projects. Let's connect and make the web a more exciting place together!</p>
+
+                    <div class="d-flex justify-content-center">
+                        <a class="mx-3" href="https://github.com/eubert369" target="_blank" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" data-bs-title="Visit my Github Profile"><img
+                                src="icons/icons8-github-50.png" alt="Github Icon"></a>
+                        <a class="mx-3" href="https://www.facebook.com/marceubert.contado" target="_blank"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            data-bs-title="Visit my Facebook Profile"><img src="icons/icons8-facebook-50.png"
+                                alt="Facebook Icon"></a>
+                        <a class="mx-3" href="https://www.linkedin.com/in/marc-eubert-contado-846996290/"
+                            target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            data-bs-title="Visit my Linkedin Profile"><img src="icons/icons8-linkedin-50.png"
+                                alt="Linkedin Icon"></a>
+                    </div>
+                    <!-- <a class="btn w-50 rounded-4 rounded-pill text-white fw-bold"
+                    href="https://www.facebook.com/marceubert.contado" target="_blank">Know More</a>                 -->
                 </div>
-                <div class="form-group">
-                    <label for="text">Your Message:</label>
-                    <textarea id="text" class="form-control bg-secondary" required></textarea>
-                </div>
-                <button type="submit"
-                    class="text-decoration-none fw-bold text-white bg-black mt-3 rounded-pill">Send</button>
-            </form>
+            </div>
         </div>
     </div>
+
+    <div id="service" class="offset container mt-3 mb-5 pb-5">        
+        <div class="post-heading text-center">
+            <h3 id="text-head" class="fw-bold display-3" data-aos="fade-up">These are some of my projects</h3>
+            <hr class="w-50 mx-auto pb-5" data-aos="fade-up">
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-8 pb-5" data-aos="zoom-in">
+                <div class="card bg-secondary border rounded rounded-4" style="width: 18rem;">
+                    <div class="p-3">
+                        <img src="images/bookredux.png" class="card-img-top border" alt="...">
+                    </div>
+                    <div class="card-body pb-0 bg-light border rounded rounded-bottom-4 rounded-top-0">
+                        <h5 class="card-title text-start fw-bold"><a target="_blank"
+                                class="text-decoration-none text-black">BookRedux Store</a></h5>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">Laravel</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">Javascript</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">Bootstrap</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">HTML</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">CSS</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">MySql</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-8 pb-5" data-aos="zoom-in">
+                <div class="card bg-secondary border rounded rounded-4" style="width: 18rem;">
+                    <div class="p-3">
+                        <img src="images/todo-list.png" class="card-img-top border" alt="...">
+                    </div>
+                    <div class="card-body pb-0 bg-light border rounded rounded-bottom-4 rounded-top-0">
+                        <h5 class="card-title text-start fw-bold"><a target="_blank"
+                                class="text-decoration-none text-black">Todo List App</a></h5>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">Laravel</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">Javascript</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">Bootstrap</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">HTML</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">CSS</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">MySql</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-8 pb-5" data-aos="zoom-in">
+                <div class="card bg-secondary border rounded rounded-4" style="width: 18rem;">
+                    <div class="p-3">
+                        <img src="images/point-of-sale.png" class="card-img-top border" alt="...">
+                    </div>
+                    <div class="card-body pb-0 bg-light border rounded rounded-bottom-4 rounded-top-0">
+                        <h5 class="card-title text-start fw-bold"><a target="_blank"
+                                class="text-decoration-none text-black">Point of Sales</a></h5>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">PHP</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">Javascript</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">Bootstrap</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">HTML</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">CSS</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">MySql</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-8 pb-5" data-aos="zoom-in">
+                <div class="card bg-secondary border rounded rounded-4" style="width: 18rem;">
+                    <div class="p-3">
+                        <img src="images/simpleCalc.png" class="card-img-top border" alt="...">
+                    </div>
+                    <div class="card-body pb-0 bg-light border rounded rounded-bottom-4 rounded-top-0">
+                        <h5 class="card-title text-start fw-bold"><a target="_blank"
+                                class="text-decoration-none text-black">Simple Calculator</a></h5>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">Javascript</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">Bootstrap</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">HTML</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">CSS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-8 pb-5" data-aos="zoom-in">
+                <div class="card bg-secondary border rounded rounded-4" style="width: 18rem;">
+                    <div class="p-3">
+                        <img src="images/fast-food.png" class="card-img-top border" alt="...">
+                    </div>
+                    <div class="card-body pb-0 bg-light border rounded rounded-bottom-4 rounded-top-0">
+                        <h5 class="card-title text-start fw-bold"><a target="_blank"
+                                class="text-decoration-none text-black">Fast Food Restaurant Management System</a></h5>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">VB.Net</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">MySql</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-8 pb-5" data-aos="zoom-in">
+                <div class="card bg-secondary border rounded rounded-4" style="width: 18rem;">
+                    <div class="p-3">
+                        <img src="images/vaccine_chuchu.png" class="card-img-top border" alt="...">
+                    </div>
+                    <div class="card-body pb-0 bg-light border rounded rounded-bottom-4 rounded-top-0">
+                        <h5 class="card-title text-start fw-bold"><a target="_blank"
+                                class="text-decoration-none text-black">Vaccination System</a></h5>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">PHP</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">Javascript</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">HTML</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">CSS</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">MySql</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-8 pb-5" data-aos="zoom-in">
+                <div class="card bg-secondary border rounded rounded-4" style="width: 18rem;">
+                    <div class="p-3">
+                        <img src="images/qr-code.png" class="card-img-top border" alt="...">
+                    </div>
+                    <div class="card-body pb-0 bg-light border rounded rounded-bottom-4 rounded-top-0">
+                        <h5 class="card-title text-start fw-bold"><a target="_blank"
+                                class="text-decoration-none text-black">Frontend Mentor Challenge (QR Code
+                                Component)</a></h5>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">HTML</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">CSS</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">Bootstrap</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-8 pb-5" data-aos="zoom-in">
+                <div class="card bg-secondary border rounded rounded-4" style="width: 18rem;">
+                    <div class="p-3">
+                        <img src="images/product-view.png" class="card-img-top border" alt="...">
+                    </div>
+                    <div class="card-body pb-0 bg-light border rounded rounded-bottom-4 rounded-top-0">
+                        <h5 class="card-title text-start fw-bold"><a target="_blank"
+                                class="text-decoration-none text-black">Frontend Mentor Challenge (Product View
+                                Card)</a></h5>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">HTML</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">CSS</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">Bootstrap</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-8 pb-5" data-aos="zoom-in">
+                <div class="card bg-secondary border rounded rounded-4" style="width: 18rem;">
+                    <div class="p-3">
+                        <img src="images/order-summary.png" class="card-img-top border" alt="...">
+                    </div>
+                    <div class="card-body pb-0 bg-light border rounded rounded-bottom-4 rounded-top-0">
+                        <h5 class="card-title text-start fw-bold"><a target="_blank"
+                                class="text-decoration-none text-black">Frontend Mentor Challenge (Order Summary
+                                Component)</a></h5>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">HTML</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">CSS</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">Bootstrap</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-8 pb-5" data-aos="zoom-in">
+                <div class="card bg-secondary border rounded rounded-4" style="width: 18rem;">
+                    <div class="p-3">
+                        <img src="images/nft-preview.png" class="card-img-top border" alt="...">
+                    </div>
+                    <div class="card-body pb-0 bg-light border rounded rounded-bottom-4 rounded-top-0">
+                        <h5 class="card-title text-start fw-bold"><a target="_blank"
+                                class="text-decoration-none text-black">Frontend Mentor Challenge (NFT Preview Card)</a>
+                        </h5>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">HTML</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">CSS</p>
+                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">Bootstrap</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-        crossorigin="anonymous"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        // function sendEmail() {
-        //     Email.send({
-        //         Host: "smtp.gmail.com",
-        //         Username: document.getElementById("name").value,
-        //         Password: "password",
-        //         To: 'marceubert886@gmail.com',
-        //         From: "you@isp.com",
-        //         Subject: "This is the subject",
-        //         Body: "And this is the body"
-        //     }).then(
-        //         message => alert(message)
-        //     );
-        // }
-        // BB8FF7E16D99652351208BD8F7E1BE1E69AF
-        // 468e28d3-4963-4502-9b0d-4f064600a3a0
-        const name = document.getElementById("name"),
-            email = document.getElementById("email"),
-            msg = document.getElementById("text");
+    <div id="skill" class="offset bg-secondary container-fluid mt-3 mb-5 mt-3 pb-5 min-vh-100">
+        <div class="post-heading text-center">
+            <h3 id="text-head" class="fw-bold text-black display-3" data-aos="fade-up">Skills</h3>
+            <hr class="w-50 mx-auto pb-5" data-aos="fade-up">
+        </div>
+        <div class="row justify-content-center mb-5" data-aos="zoom-in">
+            <!-- <a href="#" class="col col-sm-2 mb-2"><img src="icons/icons8-linux-100.png" alt=""></a> -->
+            <a href="https://www.figma.com/" target="_blank" class="col col-sm-2 col-md-2 mb-2"><img
+                    src="icons/icons8-figma-96.png" alt=""></a>
+            <a href="https://helpx.adobe.com/xd/help/adobe-xd-overview.html" target="_blank"
+                class="col col-sm-2 col-md-2 mb-2"><img src="icons/icons8-adobe-xd-100.png" alt=""></a>
+            <a href="https://code.visualstudio.com/" target="_blank" class="col col-sm-2 col-md-2 mb-2"><img
+                    src="icons/icons8-visual-studio-90.png" alt=""></a>
+            <a href="https://netbeans.apache.org/front/main/" target="_blank" class="col col-sm-2 col-md-2 mb-2"><img
+                    src="icons/icons8-apache-netbeans-100.png" alt=""></a>
+            <a href="https://www.jetbrains.com/pycharm/" target="_blank" class="col col-sm-2 col-md-2 mb-2"><img
+                    src="icons/icons8-pycharm-96.png" alt=""></a>
+            <a href="https://html.com/html5/" target="_blank" class="col col-sm-2 col-md-2 mb-2"><img
+                    src="icons/icons8-html-100.png" alt=""></a>
+            <a href="https://getbootstrap.com/docs/3.4/css/" target="_blank" class="col col-sm-2 col-md-2 mb-2"><img
+                    src="icons/icons8-css-100.png" alt=""></a>
+            <a href="https://www.javascript.com/" target="_blank" class="col col-sm-2 col-md-2 mb-2"><img
+                    src="icons/icons8-javascript-100.png" alt=""></a>
+            <a href="https://www.python.org/" target="_blank" class="col col-sm-2 col-md-2 mb-2"><img
+                    src="icons/icons8-python-100.png" alt=""></a>
+            <a href="https://www.php.net/" target="_blank" class="col col-sm-2 col-md-2 mb-2"><img
+                    src="icons/icons8-php-100.png" alt=""></a>
+            <a href="https://www.tutorialspoint.com/vb.net/vb.net_overview.htm" target="_blank"
+                class="col col-sm-2 col-md-2 mb-2"><img src="icons/icons8-visual-basic-100.png" alt=""></a>
+            <a href="https://www.java.com/en/" target="_blank" class="col col-sm-2 col-md-2 mb-2"><img
+                    src="icons/icons8-java-100.png" alt=""></a>
+            <a href="https://laravel.com/" target="_blank" class="col col-sm-2 col-md-2 mb-2"><img
+                    src="icons/icons8-laravel-100.png" alt=""></a>
+            <a href="https://getbootstrap.com/" target="_blank" class="col col-sm-2 col-md-2 mb-2"><img
+                    src="icons/icons8-bootstrap-100.png" alt=""></a>
+            <a href="https://reactnative.dev/" target="_blank" class="col col-sm-2 col-md-2 mb-2"><img
+                    src="icons/icons8-react-native-100.png" alt=""></a>
+            <a href="https://www.mysql.com/" target="_blank" class="col col-sm-2 col-md-2 mb-2"><img
+                    src="icons/icons8-mysql-100.png" alt=""></a>
+        </div>
+    </div>
 
-        function sendEmail() {
-            Email.send({
-                SecureToken: "468e28d3-4963-4502-9b0d-4f064600a3a0",
-                To: 'marceubert886@gmail.com',
-                From: email.value,
-                Subject: "Inquiry from client",
-                Body: "This is " + name.value + "\n" + msg.value
-            }).then(
-                message => alert(message)
-            );
-        }
+    <div id="contact" class="offset w-50 mx-auto mt-5 mb-5">
+        <div class="post-heading text-center">
+            <h3 class="fw-bold display-4" data-aos="fade-up">Get in touch</h3>
+            <hr class="w-50 mx-auto" data-aos="fade-up">
+            <div class="d-flex justify-content-center pb-5" data-aos="fade-up">
+                <a class="mx-3" href="https://github.com/eubert369" target="_blank" data-bs-toggle="tooltip"
+                    data-bs-placement="bottom" data-bs-title="Visit my Github Profile"><img
+                        src="icons/icons8-github-50.png" alt="Github Icon"></a>
+                <a class="mx-3" href="https://www.facebook.com/marceubert.contado" target="_blank"
+                    data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Visit my Facebook Profile"><img
+                        src="icons/icons8-facebook-50.png" alt="Facebook Icon"></a>
+                <a class="mx-3" href="https://www.linkedin.com/in/marc-eubert-contado-846996290/" target="_blank"
+                    data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Visit my Linkedin Profile"><img
+                        src="icons/icons8-linkedin-50.png" alt="Linkedin Icon"></a>
+            </div>
+        </div>
+        <form action="#" data-aos="fade-up">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control bg-secondary" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control bg-secondary" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="text">Your Message:</label>
+                <textarea id="text" class="form-control bg-secondary" required></textarea>
+            </div>
+            <button type="submit"
+                class="text-decoration-none px-2 fw-bold text-white bg-black mt-3 rounded-pill">Send</button>
+        </form>
+    </div>
 
-    </script>
 </body>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    AOS.init();
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+</script>
 
 </html>
