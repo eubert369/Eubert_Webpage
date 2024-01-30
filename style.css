@@ -134,6 +134,69 @@ footer a {
     text-decoration: none;
 }
 
+.card {
+    /* border: 2px solid #343a40; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.image-holder {    
+    background-color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    /* border: 2px solid #343a40; */
+    /* border-top: 1px solid #343a40;
+    border-left: 1px solid #343a40;
+    border-right: 1px solid #343a40; */
+}
+
+.card-body {    
+    background-color: #343a40;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    /* border-bottom: 1px solid #343a40;
+    border-left: 1px solid #343a40;
+    border-right: 1px solid #343a40; */
+}
+
+.pill-lang {
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    display: inline-block;
+    border: 1px solid gray;
+}
+
+.title-card {
+    color: #ffffff;
+}
+
+.card:hover {    
+    /* box-shadow: 5px 5px 5px 5px #979696; */
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.card:hover .image-holder {        
+    background-color: #343a40;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card:hover .card-body {            
+    background-color: #fff;
+}
+
+.card:hover .title-card {
+    /* color: rgb(70, 66, 66); */
+    color: #343a40;
+    font-weight: bolder;
+}
+
+.card:hover .pill-lang {
+    /* background-color: rgb(70, 66, 66); */
+    background-color: #343a40;
+    color: #fff;
+}
+
 /* --------------- Media Query --------------- */
 @media screen and (max-width: 600px) {
     .navbar {

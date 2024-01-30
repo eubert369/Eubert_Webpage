@@ -14,41 +14,40 @@
 </head>
 
 <body data-spy='scroll' data-bs-target='navbarResponsive'>
-    <div id="home">
-        <nav id="navbar" class="navbar navbar-expand-md fixed-top">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarResponsive">
-                    <!-- <i class="fa-light fa-bars"></i> -->
-                    <span class="navbar-toggler-icon navbar-dark"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="#home" onclick="home()">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#about" onclick="about()">ABOUT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#service" onclick="work()">PROJECTS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#skill">SKILLS</a>
-                        </li>
-                        <li class="nav-item text-white">
-                            <a class="nav-link text-white" href="#contact" onclick="contact()">CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
+    <nav id="navbar" class="navbar navbar-expand-sm fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+                <!-- <i class="fa-light fa-bars"></i> -->
+                <span class="navbar-toggler-icon navbar-dark"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#service">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#skill">SKILLS</a>
+                    </li>
+                    <li class="nav-item text-white">
+                        <a class="nav-link text-white" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+    <div id="home">
         <div class="background">
             <img class="img-fluid" src="backImage.jpg" alt="image">
         </div>
         <div class="heading-content text-center">
             <h5>Hello I'm</h5>
-            <h1>Marc Eubert</h1>           
+            <h1>Marc Eubert</h1>
         </div>
     </div>
     <div id="about" class="offset container-fluid pb-5 min-vh-100">
@@ -59,7 +58,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-12 pb-4" data-aos="fade-right">
-                    <img id="img" class="img-fluid rounded-5" src="backImage.jpg" alt="profile-image">
+                    <img id="img" class="img-fluid rounded-5" src="backImage.jpg" alt="profile-image" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;">
                 </div>
                 <div class="col-lg-6 col-md-6 col-12" data-aos="fade-left">
                     <h2>Wanna Know Me?</h2>
@@ -94,7 +93,7 @@
         </div>
     </div>
 
-    <div id="service" class="offset container mt-3 mb-5 pb-5">        
+    <div id="service" class="offset container mt-3 mb-5 pb-5">
         <div class="post-heading text-center">
             <h3 id="text-head" class="fw-bold display-3" data-aos="fade-up">These are some of my projects</h3>
             <hr class="w-50 mx-auto pb-5" data-aos="fade-up">
@@ -102,212 +101,213 @@
 
         <div class="row justify-content-center">
             <div class="col-lg-4 col-md-6 col-8 pb-5" data-aos="zoom-in">
-                <div class="card bg-secondary border rounded rounded-4" style="width: 18rem;">
-                    <div class="p-3">
+                <div class="card border border-secondary rounded rounded-4" style="width: 18rem;">
+                    <div class="p-3 image-holder">
                         <img src="images/bookredux.png" class="card-img-top border" alt="...">
                     </div>
-                    <div class="card-body pb-0 bg-light border rounded rounded-bottom-4 rounded-top-0">
+                    <div class="card-body pb-0 border">
                         <h5 class="card-title text-start fw-bold"><a target="_blank"
-                                class="text-decoration-none text-black">BookRedux Store</a></h5>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                                class="text-decoration-none title-card">BookRedux Store</a></h5>
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">Laravel</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">Javascript</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">Bootstrap</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">HTML</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">CSS</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">MySql</p>
                     </div>
                 </div>
             </div>
+            
             <div class="col-lg-4 col-md-6 col-8 pb-5" data-aos="zoom-in">
-                <div class="card bg-secondary border rounded rounded-4" style="width: 18rem;">
-                    <div class="p-3">
+                <div class="card border border-secondary rounded rounded-4" style="width: 18rem;">
+                    <div class="p-3 image-holder">
                         <img src="images/todo-list.png" class="card-img-top border" alt="...">
                     </div>
-                    <div class="card-body pb-0 bg-light border rounded rounded-bottom-4 rounded-top-0">
+                    <div class="card-body pb-0 border">
                         <h5 class="card-title text-start fw-bold"><a target="_blank"
-                                class="text-decoration-none text-black">Todo List App</a></h5>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                                class="text-decoration-none title-card">Todo List App</a></h5>
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">Laravel</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">Javascript</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">Bootstrap</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">HTML</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">CSS</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">MySql</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-8 pb-5" data-aos="zoom-in">
-                <div class="card bg-secondary border rounded rounded-4" style="width: 18rem;">
-                    <div class="p-3">
+                <div class="card border border-secondary rounded rounded-4" style="width: 18rem;">
+                    <div class="p-3 image-holder">
                         <img src="images/point-of-sale.png" class="card-img-top border" alt="...">
                     </div>
-                    <div class="card-body pb-0 bg-light border rounded rounded-bottom-4 rounded-top-0">
+                    <div class="card-body pb-0 border">
                         <h5 class="card-title text-start fw-bold"><a target="_blank"
-                                class="text-decoration-none text-black">Point of Sales</a></h5>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                                class="text-decoration-none title-card">Point of Sales</a></h5>
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">PHP</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">Javascript</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">Bootstrap</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">HTML</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">CSS</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">MySql</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-8 pb-5" data-aos="zoom-in">
-                <div class="card bg-secondary border rounded rounded-4" style="width: 18rem;">
-                    <div class="p-3">
+                <div class="card border border-secondary rounded rounded-4" style="width: 18rem;">
+                    <div class="p-3 image-holder">
                         <img src="images/simpleCalc.png" class="card-img-top border" alt="...">
                     </div>
-                    <div class="card-body pb-0 bg-light border rounded rounded-bottom-4 rounded-top-0">
+                    <div class="card-body pb-0 border">
                         <h5 class="card-title text-start fw-bold"><a target="_blank"
-                                class="text-decoration-none text-black">Simple Calculator</a></h5>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                                class="text-decoration-none title-card">Simple Calculator</a></h5>
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">Javascript</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">Bootstrap</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">HTML</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">CSS</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-8 pb-5" data-aos="zoom-in">
-                <div class="card bg-secondary border rounded rounded-4" style="width: 18rem;">
-                    <div class="p-3">
+                <div class="card border border-secondary rounded rounded-4" style="width: 18rem;">
+                    <div class="p-3 image-holder">
                         <img src="images/fast-food.png" class="card-img-top border" alt="...">
                     </div>
-                    <div class="card-body pb-0 bg-light border rounded rounded-bottom-4 rounded-top-0">
+                    <div class="card-body pb-0 border">
                         <h5 class="card-title text-start fw-bold"><a target="_blank"
-                                class="text-decoration-none text-black">Fast Food Restaurant Management System</a></h5>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                                class="text-decoration-none title-card">Fast Food Restaurant Management System</a></h5>
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">VB.Net</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">MySql</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-8 pb-5" data-aos="zoom-in">
-                <div class="card bg-secondary border rounded rounded-4" style="width: 18rem;">
-                    <div class="p-3">
+                <div class="card border border-secondary rounded rounded-4" style="width: 18rem;">
+                    <div class="p-3 image-holder">
                         <img src="images/vaccine_chuchu.png" class="card-img-top border" alt="...">
                     </div>
-                    <div class="card-body pb-0 bg-light border rounded rounded-bottom-4 rounded-top-0">
+                    <div class="card-body pb-0 border">
                         <h5 class="card-title text-start fw-bold"><a target="_blank"
-                                class="text-decoration-none text-black">Vaccination System</a></h5>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                                class="text-decoration-none title-card">Vaccination System</a></h5>
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">PHP</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">Javascript</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">HTML</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">CSS</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">MySql</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-8 pb-5" data-aos="zoom-in">
-                <div class="card bg-secondary border rounded rounded-4" style="width: 18rem;">
-                    <div class="p-3">
+                <div class="card border border-secondary rounded rounded-4" style="width: 18rem;">
+                    <div class="p-3 image-holder">
                         <img src="images/surveyForm.png" class="card-img-top border" alt="...">
                     </div>
-                    <div class="card-body pb-0 bg-light border rounded rounded-bottom-4 rounded-top-0">
+                    <div class="card-body pb-0 border">
                         <h5 class="card-title text-start fw-bold"><a target="_blank"
-                                class="text-decoration-none text-black">Survey Form</a></h5>                        
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                                class="text-decoration-none title-card">Survey Form</a></h5>
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">HTML</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
-                            style="font-size: 10px;">CSS</p>                        
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
+                            style="font-size: 10px;">CSS</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-8 pb-5" data-aos="zoom-in">
-                <div class="card bg-secondary border rounded rounded-4" style="width: 18rem;">
-                    <div class="p-3">
+                <div class="card border border-secondary rounded rounded-4" style="width: 18rem;">
+                    <div class="p-3 image-holder">
                         <img src="images/qr-code.png" class="card-img-top border" alt="...">
                     </div>
-                    <div class="card-body pb-0 bg-light border rounded rounded-bottom-4 rounded-top-0">
+                    <div class="card-body pb-0 border">
                         <h5 class="card-title text-start fw-bold"><a target="_blank"
-                                class="text-decoration-none text-black">Frontend Mentor Challenge (QR Code
+                                class="text-decoration-none title-card">Frontend Mentor Challenge (QR Code
                                 Component)</a></h5>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">HTML</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">CSS</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">Bootstrap</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-8 pb-5" data-aos="zoom-in">
-                <div class="card bg-secondary border rounded rounded-4" style="width: 18rem;">
-                    <div class="p-3">
+                <div class="card border border-secondary rounded rounded-4" style="width: 18rem;">
+                    <div class="p-3 image-holder">
                         <img src="images/product-view.png" class="card-img-top border" alt="...">
                     </div>
-                    <div class="card-body pb-0 bg-light border rounded rounded-bottom-4 rounded-top-0">
+                    <div class="card-body pb-0 border">
                         <h5 class="card-title text-start fw-bold"><a target="_blank"
-                                class="text-decoration-none text-black">Frontend Mentor Challenge (Product View
+                                class="text-decoration-none title-card">Frontend Mentor Challenge (Product View
                                 Card)</a></h5>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">HTML</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">CSS</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">Bootstrap</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-8 pb-5" data-aos="zoom-in">
-                <div class="card bg-secondary border rounded rounded-4" style="width: 18rem;">
-                    <div class="p-3">
+                <div class="card border border-secondary rounded rounded-4" style="width: 18rem;">
+                    <div class="p-3 image-holder">
                         <img src="images/order-summary.png" class="card-img-top border" alt="...">
                     </div>
-                    <div class="card-body pb-0 bg-light border rounded rounded-bottom-4 rounded-top-0">
+                    <div class="card-body pb-0 border">
                         <h5 class="card-title text-start fw-bold"><a target="_blank"
-                                class="text-decoration-none text-black">Frontend Mentor Challenge (Order Summary
+                                class="text-decoration-none title-card">Frontend Mentor Challenge (Order Summary
                                 Component)</a></h5>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">HTML</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">CSS</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">Bootstrap</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-8 pb-5" data-aos="zoom-in">
-                <div class="card bg-secondary border rounded rounded-4" style="width: 18rem;">
-                    <div class="p-3">
+                <div class="card border border-secondary rounded rounded-4" style="width: 18rem;">
+                    <div class="p-3 image-holder">
                         <img src="images/nft-preview.png" class="card-img-top border" alt="...">
                     </div>
-                    <div class="card-body pb-0 bg-light border rounded rounded-bottom-4 rounded-top-0">
+                    <div class="card-body pb-0 border">
                         <h5 class="card-title text-start fw-bold"><a target="_blank"
-                                class="text-decoration-none text-black">Frontend Mentor Challenge (NFT Preview Card)</a>
+                                class="text-decoration-none title-card">Frontend Mentor Challenge (NFT Preview Card)</a>
                         </h5>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">HTML</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">CSS</p>
-                        <p class="btn text-start bg-dark text-light fw-bold px-2 py-1 rounded-pill"
+                        <p class="text-start pill-lang px-2 py-1 rounded-pill"
                             style="font-size: 10px;">Bootstrap</p>
                     </div>
                 </div>
@@ -328,16 +328,17 @@
                 class="col col-sm-2 col-md-2 mb-2 text-center"><img src="icons/icons8-adobe-xd-100.png" alt=""></a>
             <a href="https://code.visualstudio.com/" target="_blank" class="col col-sm-2 col-md-2 mb-2 text-center"><img
                     src="icons/icons8-visual-studio-90.png" alt=""></a>
-            <a href="https://netbeans.apache.org/front/main/" target="_blank" class="col col-sm-2 col-md-2 mb-2 text-center"><img
-                    src="icons/icons8-apache-netbeans-100.png" alt=""></a>
-            <a href="https://www.jetbrains.com/pycharm/" target="_blank" class="col col-sm-2 col-md-2 mb-2 text-center"><img
-                    src="icons/icons8-pycharm-96.png" alt=""></a>
+            <a href="https://netbeans.apache.org/front/main/" target="_blank"
+                class="col col-sm-2 col-md-2 mb-2 text-center"><img src="icons/icons8-apache-netbeans-100.png"
+                    alt=""></a>
+            <a href="https://www.jetbrains.com/pycharm/" target="_blank"
+                class="col col-sm-2 col-md-2 mb-2 text-center"><img src="icons/icons8-pycharm-96.png" alt=""></a>
             <a href="https://git-scm.com/" target="_blank" class="col col-sm-2 col-md-2 mb-2 text-center"><img
-                        src="icons/icons8-git-100.png" alt=""></a>                    
+                    src="icons/icons8-git-100.png" alt=""></a>
             <a href="https://html.com/html5/" target="_blank" class="col col-sm-2 col-md-2 mb-2 text-center"><img
                     src="icons/icons8-html-100.png" alt=""></a>
-            <a href="https://getbootstrap.com/docs/3.4/css/" target="_blank" class="col col-sm-2 col-md-2 mb-2 text-center"><img
-                    src="icons/icons8-css-100.png" alt=""></a>
+            <a href="https://getbootstrap.com/docs/3.4/css/" target="_blank"
+                class="col col-sm-2 col-md-2 mb-2 text-center"><img src="icons/icons8-css-100.png" alt=""></a>
             <a href="https://www.javascript.com/" target="_blank" class="col col-sm-2 col-md-2 mb-2 text-center"><img
                     src="icons/icons8-javascript-100.png" alt=""></a>
             <a href="https://www.python.org/" target="_blank" class="col col-sm-2 col-md-2 mb-2 text-center"><img
@@ -407,12 +408,28 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.birds.min.js"></script>
 <script>
     AOS.init();
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
+    VANTA.BIRDS({
+        el: "body",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundColor: 0xffffff,
+        color1: 0x0,
+        color2: 0x5f5f5f,
+        birdSize: 0.50,
+        backgroundAlpha: 0.61
+    })
 </script>
 
 </html>
